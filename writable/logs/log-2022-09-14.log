@@ -1,0 +1,6 @@
+CRITICAL - 2022-09-14 16:56:35 --> Cannot redeclare App\Controllers\News::index()
+in APPPATH/Controllers/News.php on line 32.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-14 16:58:25 --> Cannot redeclare App\Controllers\News::index()
+in APPPATH/Controllers/News.php on line 32.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
