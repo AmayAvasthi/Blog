@@ -35,7 +35,7 @@ class Database extends Config
         'hostname' => 'localhost',
         'username' => 'phpmyadmin',
         'password' => 'hello',
-        'database' => 'NEWS_SECTION',
+        'database' => 'clients',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,

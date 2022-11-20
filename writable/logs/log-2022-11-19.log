@@ -1,0 +1,95 @@
+ERROR - 2022-11-19 21:23:56 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'codeigniter_db' in /var/www/html/CI/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /var/www/html/CI/system/Database/MySQLi/Connection.php(171): mysqli->real_connect()
+#1 /var/www/html/CI/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /var/www/html/CI/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/CI/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/CI/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/CI/system/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#6 /var/www/html/CI/app/Models/NewsModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 /var/www/html/CI/app/Controllers/News.php(14): App\Models\NewsModel->getNews()
+#8 /var/www/html/CI/system/CodeIgniter.php(902): App\Controllers\News->index()
+#9 /var/www/html/CI/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/CI/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/CI/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/CI/system/Commands/Server/rewrite.php(46): require_once('...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'codeigniter_db' in /var/www/html/CI/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/CI/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /var/www/html/CI/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/CI/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#3 /var/www/html/CI/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/html/CI/system/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+#5 /var/www/html/CI/app/Models/NewsModel.php(15): CodeIgniter\BaseModel->findAll()
+#6 /var/www/html/CI/app/Controllers/News.php(14): App\Models\NewsModel->getNews()
+#7 /var/www/html/CI/system/CodeIgniter.php(902): App\Controllers\News->index()
+#8 /var/www/html/CI/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/html/CI/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/html/CI/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /var/www/html/CI/system/Commands/Server/rewrite.php(46): require_once('...')
+#12 {main}
+CRITICAL - 2022-11-19 21:23:56 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'codeigniter_db'
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Models/NewsModel.php(15): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/News.php(14): App\Models\NewsModel->getNews()
+ 7 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\News->index()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-19 21:24:30 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'codeigniter_db' in /var/www/html/CI/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /var/www/html/CI/system/Database/MySQLi/Connection.php(171): mysqli->real_connect()
+#1 /var/www/html/CI/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /var/www/html/CI/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/CI/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/CI/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/html/CI/system/BaseModel.php(748): CodeIgniter\Model->doInsert()
+#6 /var/www/html/CI/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /var/www/html/CI/system/BaseModel.php(658): CodeIgniter\Model->insert()
+#8 /var/www/html/CI/app/Controllers/News.php(50): CodeIgniter\BaseModel->save()
+#9 /var/www/html/CI/system/CodeIgniter.php(902): App\Controllers\News->create()
+#10 /var/www/html/CI/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#11 /var/www/html/CI/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#12 /var/www/html/CI/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /var/www/html/CI/system/Commands/Server/rewrite.php(46): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'codeigniter_db' in /var/www/html/CI/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/CI/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /var/www/html/CI/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/CI/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#3 /var/www/html/CI/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#4 /var/www/html/CI/system/BaseModel.php(748): CodeIgniter\Model->doInsert()
+#5 /var/www/html/CI/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#6 /var/www/html/CI/system/BaseModel.php(658): CodeIgniter\Model->insert()
+#7 /var/www/html/CI/app/Controllers/News.php(50): CodeIgniter\BaseModel->save()
+#8 /var/www/html/CI/system/CodeIgniter.php(902): App\Controllers\News->create()
+#9 /var/www/html/CI/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/CI/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/CI/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /var/www/html/CI/system/Commands/Server/rewrite.php(46): require_once('...')
+#13 {main}
+CRITICAL - 2022-11-19 21:24:30 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'codeigniter_db'
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(748): CodeIgniter\Model->doInsert()
+ 5 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert()
+ 6 SYSTEMPATH/BaseModel.php(658): CodeIgniter\Model->insert()
+ 7 APPPATH/Controllers/News.php(50): CodeIgniter\BaseModel->save()
+ 8 SYSTEMPATH/CodeIgniter.php(902): App\Controllers\News->create()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
