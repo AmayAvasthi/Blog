@@ -41,15 +41,39 @@ $routes->set404Override();
 //$routes->get('news', 'News::index');
 //$routes->get('pages', 'Pages::index');
 //$routes->get('(:any)', 'Pages::view/$1');
-$routes->get('/', 'SignupController::index');
+#$routes->get('/', 'SignupController::index');
 
 #$routes->get('/signup', 'SignupController::store');
+#$routes->match(['get', 'post'], '/signup', 'SignupController::store');
+
+#$routes->get('/signin', 'SigninController::index');
+#$routes->match(['get', 'post'], '/signin', 'SigninController::loginAuth');
+/*
+$routes->get('/', 'SignupController::index');
+$routes->get('/signup', 'SignupController::index');
+$routes->match(['get', 'post'], 'SignupController/store', 'SignupController::store');
+$routes->match(['get', 'post'], 'SigninController/loginAuth', 'SigninController::loginAuth');
+$routes->get('/signin', 'SigninController::index');
+$routes->get('/profile', 'ProfileController::index',['filter' => 'authGuard']);
+#$routes->get('/profile', 'ProfileController::index',['filter' => 'authGuard']);
+*/
+$routes->get('/', 'WelcomeController::index');
+#$routes->get('/signup', 'SignupController::index');
 $routes->match(['get', 'post'], '/signup', 'SignupController::store');
+#$routes->get('/signup', 'SignupController::store');
 
 $routes->get('/signin', 'SigninController::index');
 $routes->match(['get', 'post'], '/signin', 'SigninController::loginAuth');
 
 $routes->get('/profile', 'ProfileController::index',['filter' => 'authGuard']);
+
+$routes->get('/frontpage', 'FrontPageController::index');
+$routes->match(['get', 'post'], 'news/create', 'News::create');
+$routes->get('news/(:segment)', 'News::view/$1');
+$routes->get('news', 'News::index');
+
+
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

@@ -35,7 +35,7 @@ class Database extends Config
         'hostname' => 'localhost',
         'username' => 'phpmyadmin',
         'password' => 'hello',
-        'database' => 'clients',
+        'database' => 'Blog',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
