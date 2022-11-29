@@ -9,14 +9,14 @@
         <div class="main">
             <?= esc($news_item['body']) ?>
         </div>
-        <p><a href="/news/<?= esc($news_item['slug'], 'url') ?>">View article</a></p>
+        <p><a href="news/<?= esc($news_item['slug'], 'url') ?>">View Blog</a></p>
 
     <?php endforeach ?>
 
 <?php else: ?>
 
-    <h3>No News</h3>
+    <h3>No BLogs</h3>
 
-    <p>Unable to find any news for you.</p>
+    <p>Unable to find any blogs for you.</p>
 
 <?php endif ?>
