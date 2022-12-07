@@ -57,6 +57,7 @@ $routes->get('/signin', 'SigninController::index');
 $routes->get('/profile', 'ProfileController::index',['filter' => 'authGuard']);
 #$routes->get('/profile', 'ProfileController::index',['filter' => 'authGuard']);
 */
+
 $routes->get('/', 'WelcomeController::index');
 #$routes->get('/signup', 'SignupController::index');
 $routes->match(['get', 'post'], '/signup', 'SignupController::store');
@@ -67,11 +68,17 @@ $routes->match(['get', 'post'], '/signin', 'SigninController::loginAuth');
 
 $routes->get('/profile', 'ProfileController::index',['filter' => 'authGuard']);
 
+$routes->get('/create', 'Task::create');
+
+
+
 $routes->get('/frontpage', 'FrontPageController::index');
+$routes->get('/about', 'AboutController::index');
+$routes->get('/contact', 'ContactController::index');
+
 $routes->match(['get', 'post'], 'news/create', 'News::create');
 $routes->get('news/(:segment)', 'News::view/$1');
 $routes->get('news', 'News::index');
-
 
 
 /*

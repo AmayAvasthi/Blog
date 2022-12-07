@@ -1,8 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>CodeIgniter Tutorial</title>
+    <title>Basic Crud operation in Codeigniter 3</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 </head>
 <body>
-
-    <h1><?= esc($title) ?></h1>
+<div class="container">
